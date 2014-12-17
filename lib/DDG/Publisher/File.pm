@@ -1,6 +1,6 @@
 package DDG::Publisher::File;
 # ABSTRACT: A file inside the publisher
-$DDG::Publisher::File::VERSION = '1042';
+$DDG::Publisher::File::VERSION = '1043';
 use MooX;
 use Locale::Simple;
 use File::ShareDir ':ALL';
@@ -187,7 +187,7 @@ DDG::Publisher::File - A file inside the publisher
 
 =head1 VERSION
 
-version 1042
+version 1043
 
 =head1 ATTRIBUTES
 

@@ -1,6 +1,6 @@
 package DDG::Publisher::DirRole;
 # ABSTRACT: The role for a directory in the publisher system
-$DDG::Publisher::DirRole::VERSION = '1042';
+$DDG::Publisher::DirRole::VERSION = '1043';
 use MooX::Role;
 use DDG::Publisher::File;
 
@@ -133,7 +133,7 @@ DDG::Publisher::DirRole - The role for a directory in the publisher system
 
 =head1 VERSION
 
-version 1042
+version 1043
 
 =head1 ATTRIBUTES
 

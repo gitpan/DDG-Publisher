@@ -1,5 +1,5 @@
 package DDG::Publisher::Site::Fixtracking;
-$DDG::Publisher::Site::Fixtracking::VERSION = '1042';
+$DDG::Publisher::Site::Fixtracking::VERSION = '1043';
 use MooX;
 use DDGC::Locale::DuckduckgoFixtracking;
 
@@ -29,7 +29,7 @@ DDG::Publisher::Site::Fixtracking
 
 =head1 VERSION
 
-version 1042
+version 1043
 
 =head1 AUTHOR
 

@@ -1,5 +1,5 @@
 package DDG::Publisher::Site::Dontbubbleus;
-$DDG::Publisher::Site::Dontbubbleus::VERSION = '1042';
+$DDG::Publisher::Site::Dontbubbleus::VERSION = '1043';
 use MooX;
 use DDGC::Locale::DuckduckgoDontbubbleus;
 
@@ -29,7 +29,7 @@ DDG::Publisher::Site::Dontbubbleus
 
 =head1 VERSION
 
-version 1042
+version 1043
 
 =head1 AUTHOR
 

@@ -1,5 +1,5 @@
 package DDG::Publisher::Site::Duckduckgo;
-$DDG::Publisher::Site::Duckduckgo::VERSION = '1042';
+$DDG::Publisher::Site::Duckduckgo::VERSION = '1043';
 use MooX;
 use DDGC::Locale::DuckduckgoDuckduckgo;
 
@@ -29,7 +29,7 @@ DDG::Publisher::Site::Duckduckgo
 
 =head1 VERSION
 
-version 1042
+version 1043
 
 =head1 AUTHOR
 

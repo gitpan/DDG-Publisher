@@ -1,6 +1,6 @@
 package DDG::Publisher;
 # ABSTRACT: Generation of the static files of DuckDuckGo and its microsites.
-$DDG::Publisher::VERSION = '1042';
+$DDG::Publisher::VERSION = '1043';
 use MooX;
 use Path::Class;
 use Class::Load ':all';
@@ -168,7 +168,7 @@ DDG::Publisher - Generation of the static files of DuckDuckGo and its microsites
 
 =head1 VERSION
 
-version 1042
+version 1043
 
 =head1 ATTRIBUTES
 
