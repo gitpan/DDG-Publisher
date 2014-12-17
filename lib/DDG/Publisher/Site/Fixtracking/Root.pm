@@ -1,5 +1,5 @@
 package DDG::Publisher::Site::Fixtracking::Root;
-$DDG::Publisher::Site::Fixtracking::Root::VERSION = '1043';
+$DDG::Publisher::Site::Fixtracking::Root::VERSION = '1044';
 use MooX;
 use Locale::Simple;
 
@@ -262,7 +262,7 @@ DDG::Publisher::Site::Fixtracking::Root
 
 =head1 VERSION
 
-version 1043
+version 1044
 
 			name => "",
 			image => "",

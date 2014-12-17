@@ -1,5 +1,5 @@
 package DDG::Publisher::Site::Duckduckhack::Root;
-$DDG::Publisher::Site::Duckduckhack::Root::VERSION = '1043';
+$DDG::Publisher::Site::Duckduckhack::Root::VERSION = '1044';
 use MooX;
 
 use IO::All;
@@ -271,7 +271,7 @@ DDG::Publisher::Site::Duckduckhack::Root
 
 =head1 VERSION
 
-version 1043
+version 1044
 
 =head1 AUTHOR
 

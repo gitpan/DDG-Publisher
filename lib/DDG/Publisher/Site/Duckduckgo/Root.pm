@@ -1,5 +1,5 @@
 package DDG::Publisher::Site::Duckduckgo::Root;
-$DDG::Publisher::Site::Duckduckgo::Root::VERSION = '1043';
+$DDG::Publisher::Site::Duckduckgo::Root::VERSION = '1044';
 use MooX;
 
 with qw(
@@ -369,7 +369,7 @@ DDG::Publisher::Site::Duckduckgo::Root
 
 =head1 VERSION
 
-version 1043
+version 1044
 
 =head1 AUTHOR
 

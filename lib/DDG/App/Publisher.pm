@@ -1,6 +1,6 @@
 package DDG::App::Publisher;
 # ABSTRACT: The application class
-$DDG::App::Publisher::VERSION = '1043';
+$DDG::App::Publisher::VERSION = '1044';
 
 use MooX;
 use MooX::Options protect_argv => 0;
@@ -88,7 +88,7 @@ DDG::App::Publisher - The application class
 
 =head1 VERSION
 
-version 1043
+version 1044
 
 =head1 SYNOPSIS
 

@@ -1,5 +1,5 @@
 package DDG::Publisher::Site::Donttrackus::Root;
-$DDG::Publisher::Site::Donttrackus::Root::VERSION = '1043';
+$DDG::Publisher::Site::Donttrackus::Root::VERSION = '1044';
 use MooX;
 
 with qw(
@@ -26,7 +26,7 @@ DDG::Publisher::Site::Donttrackus::Root
 
 =head1 VERSION
 
-version 1043
+version 1044
 
 =head1 AUTHOR
 

@@ -1,5 +1,5 @@
 package DDG::Publisher::Site::Whatisdnt;
-$DDG::Publisher::Site::Whatisdnt::VERSION = '1043';
+$DDG::Publisher::Site::Whatisdnt::VERSION = '1044';
 use MooX;
 use DDGC::Locale::DuckduckgoWhatisdnt;
 
@@ -29,7 +29,7 @@ DDG::Publisher::Site::Whatisdnt
 
 =head1 VERSION
 
-version 1043
+version 1044
 
 =head1 AUTHOR
 

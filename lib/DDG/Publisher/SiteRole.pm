@@ -1,6 +1,6 @@
 package DDG::Publisher::SiteRole;
 # ABSTRACT: The role for a site in the publisher
-$DDG::Publisher::SiteRole::VERSION = '1043';
+$DDG::Publisher::SiteRole::VERSION = '1044';
 use MooX::Role;
 use Class::Load ':all';
 use Text::Xslate qw( mark_raw );
@@ -174,7 +174,7 @@ DDG::Publisher::SiteRole - The role for a site in the publisher
 
 =head1 VERSION
 
-version 1043
+version 1044
 
 =head1 ATTRIBUTES
 

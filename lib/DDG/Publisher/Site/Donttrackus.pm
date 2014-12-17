@@ -1,5 +1,5 @@
 package DDG::Publisher::Site::Donttrackus;
-$DDG::Publisher::Site::Donttrackus::VERSION = '1043';
+$DDG::Publisher::Site::Donttrackus::VERSION = '1044';
 use MooX;
 use DDGC::Locale::DuckduckgoDonttrackus;
 
@@ -29,7 +29,7 @@ DDG::Publisher::Site::Donttrackus
 
 =head1 VERSION
 
-version 1043
+version 1044
 
 =head1 AUTHOR
 
