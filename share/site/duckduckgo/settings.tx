@@ -1,0 +1,20 @@
+<div class="settings-page-wrapper">
+    <noscript>
+        <p class="settings--noscript>
+            <: l('This page requires Javascript to function.') :>
+            <: l('If you want to use DuckDuckGo without JavaScript, please use our %s or %s versions.','<a href="/html">HTML</a>','<a href="/lite">lite</a>') :>
+        </p>
+    </noscript>
+</div>
+
+<script>
+    DDG.require('settings',function(){
+        DDG.ready(function(){
+            DDG.page = new DDG.Pages.Settings({
+                appendTo: '.settings-page-wrapper'
+            });
+        });
+    });
+</script>
+
+

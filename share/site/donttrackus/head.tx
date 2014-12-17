@@ -1,0 +1,30 @@
+<title><: l("Google tracks you. We don't.") :> <: l("An illustrated guide.") :></title>
+<link rel="image_src" href="ddg/tools/google9.jpg"/> 
+<link title="DuckDuckGo" type="application/opensearchdescription+xml" rel="search" href="ddg/opensearch.xml">
+<!-- <link rel="stylesheet" href="ddg/s515.css" type="text/css"> -->
+<link rel="stylesheet" type="text/css" href="common/css/micro.css?2">
+<link rel="stylesheet" type="text/css" href="css/track.css?1" /> 
+<meta name="viewport" content="width=100%, initial-scale=1.0" />
+
+<!--[if lte IE 9]><style>.frame, .frame input, .reveal-modal, .reveal-modal-bg, .pie { behavior: url(PIE.htc);} </style><![endif]-->
+
+<style type="text/css">
+.tableframe .clu {
+font-size: 85%;
+}
+.ctd {
+padding-top:15px;
+padding-bottom:15px;
+font-size: 85%;
+}
+.ctd2 {
+padding-bottom:10px;
+font-size: 75%;
+}
+.ctd3 {
+padding-top:25px;
+}
+</style>
+
+<script type="text/javascript" src="/locales/<: $f.locale :>/LC_MESSAGES/<: $s.locale_domain :>+sprintf+gettext+locale-simple.<: $locale_package_version :>.js"></script>
+<script type="text/javascript" src="ddg<: $ENV.DDG_DYNAMIC_JS_FILE || '/duckduck.js' :>"></script>

@@ -1,0 +1,6 @@
+<: include "meta/base.tx" :>
+<: if find_template("meta/" ~ $f.filebase ~ ".tx") { :>
+	<: include "meta/" ~ $f.filebase ~ ".tx" :>
+<: } else { :>
+	<title>DuckDuckGo</title>
+<: } :>

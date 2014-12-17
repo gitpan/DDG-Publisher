@@ -1,0 +1,537 @@
+<style type="text/css">
+.ctd {
+  padding-top:15px;
+  padding-bottom:5px;
+  font-size: 85%;
+}
+.ctd2 {
+  padding-bottom:10px;
+  font-size: 75%;
+}
+.ctd3 {
+  padding-top:15px;
+}
+</style>
+
+
+<div id="zero_click_header"><: l('URL Parameters') :></div>
+
+<div style="margin-bottom:30px;"></div>
+
+<: l('You can change %s via URL parameters by adding them after the search query, for example:',r('<a href="/settings">') ~ l('DuckDuckGo settings') ~ r('</a>')) :>
+
+<div style="padding-top:5px;"></div>
+&nbsp; &nbsp; <span class="clu">https://duckduckgo.com/?q=search&amp;kp=-1&amp;kl=us-en</span>
+
+<div style="padding-top:25px;"></div>
+These parameters are intended for individual use. They can also be used in conjunction with our <a href="/search_box">site search</a> to customize results pages more closely to your site. However, if using them for that purpose or any other beyond individual use (e.g. for apps/extensions), please do not remove our branding (ko, kr  params etc.) or advertising (k1, k4 params etc.) as we have contracts in place that we would be violating if you did so. Please see <a href="https://duck.co/help/company/partnerships">our partnerships page</a> for more info on guidelines and getting in touch with us.
+
+<div style="margin-bottom:30px;"></div>
+<table>
+
+<tr><td colspan="2"><b><: l('Result Settings') :></b></td></tr>
+
+<tr>
+<td class="ctd" style="padding-right:15px;" align="right" valign="top">
+<: l('Region:') :>
+</td>
+<td class="ctd">
+kl =
+<ul>
+<li><: l('%s for %s','xa-ar','Arabia') :>
+<li><: l('%s for %s','xa-en','Arabia (en)') :>
+<li><: l('%s for %s','ar-es','Argentina') :>
+<li><: l('%s for %s','au-en','Australia') :>
+<li><: l('%s for %s','at-de','Austria') :>
+<li><: l('%s for %s','be-fr','Belgium (fr)') :>
+<li><: l('%s for %s','be-nl','Belgium (nl)') :>
+<li><: l('%s for %s','br-pt','Brazil') :>
+<li><: l('%s for %s','bg-bg','Bulgaria') :>
+<li><: l('%s for %s','ca-en','Canada') :>
+<li><: l('%s for %s','ca-fr','Canada (fr)') :>
+<li><: l('%s for %s','ct-ca','Catalan') :>
+<li><: l('%s for %s','cl-es','Chile') :>
+<li><: l('%s for %s','cn-zh','China') :>
+<li><: l('%s for %s','co-es','Colombia') :>
+<li><: l('%s for %s','hr-hr','Croatia') :>
+<li><: l('%s for %s','cz-cs','Czech Republic') :>
+<li><: l('%s for %s','dk-da','Denmark') :>
+<li><: l('%s for %s','ee-et','Estonia') :>
+<li><: l('%s for %s','fi-fi','Finland') :>
+<li><: l('%s for %s','fr-fr','France') :>
+<li><: l('%s for %s','de-de','Germany') :>
+<li><: l('%s for %s','gr-el','Greece') :>
+<li><: l('%s for %s','hk-tzh','Hong Kong') :>
+<li><: l('%s for %s','hu-hu','Hungary') :>
+<li><: l('%s for %s','in-en','India') :>
+<li><: l('%s for %s','id-id','Indonesia') :>
+<li><: l('%s for %s','id-en','Indonesia (en)') :>
+<li><: l('%s for %s','ie-en','Ireland') :>
+<li><: l('%s for %s','il-he','Israel') :>
+<li><: l('%s for %s','it-it','Italy') :>
+<li><: l('%s for %s','jp-jp','Japan') :>
+<li><: l('%s for %s','kr-kr','Korea') :>
+<li><: l('%s for %s','lv-lv','Latvia') :>
+<li><: l('%s for %s','lt-lt','Lithuania') :>
+<li><: l('%s for %s','xl-es','Latin America') :>
+<li><: l('%s for %s','my-ms','Malaysia') :>
+<li><: l('%s for %s','my-en','Malaysia (en)') :>
+<li><: l('%s for %s','mx-es','Mexico') :>
+<li><: l('%s for %s','nl-nl','Netherlands') :>
+<li><: l('%s for %s','nz-en','New Zealand') :>
+<li><: l('%s for %s','no-no','Norway') :>
+<li><: l('%s for %s','pe-es','Peru') :>
+<li><: l('%s for %s','ph-en','Philippines') :>
+<li><: l('%s for %s','ph-tl','Philippines (tl)') :>
+<li><: l('%s for %s','pl-pl','Poland') :>
+<li><: l('%s for %s','pt-pt','Portugal') :>
+<li><: l('%s for %s','ro-ro','Romania') :>
+<li><: l('%s for %s','ru-ru','Russia') :>
+<li><: l('%s for %s','sg-en','Singapore') :>
+<li><: l('%s for %s','sk-sk','Slovak Republic') :>
+<li><: l('%s for %s','sl-sl','Slovenia') :>
+<li><: l('%s for %s','za-en','South Africa') :>
+<li><: l('%s for %s','es-es','Spain') :>
+<li><: l('%s for %s','se-sv','Sweden') :>
+<li><: l('%s for %s','ch-de','Switzerland (de)') :>
+<li><: l('%s for %s','ch-fr','Switzerland (fr)') :>
+<li><: l('%s for %s','ch-it','Switzerland (it)') :>
+<li><: l('%s for %s','tw-tzh','Taiwan') :>
+<li><: l('%s for %s','th-th','Thailand') :>
+<li><: l('%s for %s','tr-tr','Turkey') :>
+<li><: l('%s for %s','ua-uk','Ukraine') :>
+<li><: l('%s for %s','uk-en','United Kingdom') :>
+<li><: l('%s for %s','us-en','United States') :>
+<li><: l('%s for %s','ue-es','United States (es)') :>
+<li><: l('%s for %s','ve-es','Venezuela') :>
+<li><: l('%s for %s','vn-vi','Vietnam') :>
+<li><: l('%s for %s','wt-wt','No region') :>
+</ul>
+</td>
+</tr>
+
+<tr>
+<td class="ctd" style="padding-right:15px;" align="right" valign="top">
+<: l('Safe Search:') :>
+</td>
+<td class="ctd">
+<: l('%s for %s','kp = 1',lp('setting','On')) :>;
+<: l('%s for %s','kp = -1',lp('setting','Off')) :>.
+</td>
+</tr>
+
+<tr>
+<td class="ctd" style="padding-right:15px;" align="right" valign="top">
+<: l('Open Instant Answers:') :>
+</td>
+<td class="ctd">
+<: l('%s for %s','kz = 1',lp('setting','On')) :>;
+<: l('%s for %s','-1',lp('setting','Off')) :>.
+</td>
+</tr>
+
+<tr>
+<td class="ctd" style="padding-right:15px;" align="right" valign="top">
+<: l('Auto-load:') :>
+</td>
+<td class="ctd">
+<: l('%s for %s','kc = 1',lp('setting','On')) :>;
+<: l('%s for %s','-1',lp('setting','Off')) :>.
+</td>
+</tr>
+
+<tr>
+<td class="ctd" style="padding-right:15px;" align="right" valign="top">
+<: l('New Window:') :>
+</td>
+<td class="ctd">
+<: l('%s for %s','kn = 1',lp('setting','On')) :>;
+<: l('%s for %s','-1',lp('setting','Off')) :>.
+</td>
+</tr>
+
+<td class="ctd" style="padding-right:15px;" align="right" valign="top">
+<: l('Favicons:') :>
+</td>
+<td class="ctd">
+kf = 
+<ul>
+<li><: l('%s for %s','1','Just favicons') :>
+<li><: l('%s for %s','w','Just WOT (trust) ratings') :>
+<li><: l('%s for %s','fw','All WOT + favicons (both)') :>
+<li><: l('%s for %s','-1','Off') :>
+</td>
+</td>
+</tr>
+
+<tr>
+<td class="ctd" style="padding-right:15px;" align="right" valign="top">
+<: l('Full URLs:') :>
+</td>
+<td class="ctd">
+<: l('%s for %s','kaf = 1',lp('setting','On')) :>;
+<: l('%s for %s','-1',lp('setting','Off')) :>.
+</td>
+</tr>
+
+<tr>
+<td class="ctd" style="padding-right:15px;" align="right" valign="top">
+<: l('Auto-suggest:') :>
+</td>
+<td class="ctd">
+<: l('%s for %s','kac = 1',lp('setting','On')) :>;
+<: l('%s for %s','-1',lp('setting','Off')) :>.
+</td>
+</tr>
+
+<tr><td colspan="2" class="ctd3"><b><: l('Privacy Settings') :></b></td></tr>
+
+<tr>
+<td class="ctd" style="padding-right:15px;" align="right" valign="top">
+<: l('Redirect:') :>
+</td>
+<td class="ctd">
+<: l('%s for %s','kd = 1',lp('setting','On')) :>;
+<: l('%s for %s','-1',lp('setting','Off')) :>.
+</td>
+</tr>
+
+<tr>
+<td class="ctd" style="padding-right:15px;" align="right" valign="top">
+<: l('HTTPS:') :>
+</td>
+<td class="ctd">
+kh =
+<ul>
+<li><: l('%s for %s','1',lp('setting','On')) :>
+<li><: l('%s for %s','-1',lp('setting','Off')) :>
+</ul>
+</td>
+</tr>
+
+<tr>
+<td class="ctd" style="padding-right:15px;" align="right" valign="top">
+<: l('Address bar:') :>
+</td>
+<td class="ctd">
+<: l('%s for %s','kg = g','GET') :>;
+<: l('%s for %s','p','POST') :>.
+</td>
+</tr>
+
+<tr>
+<td class="ctd" style="padding-right:15px;" align="right" valign="top">
+<: l('Video Playback:') :>
+</td>
+<td class="ctd">
+k5 =
+<ul>
+<li><: l('%s for %s','1',lp('setting','Always play on DuckDuckGo')) :>
+<li><: l('%s for %s','2',lp('setting','Open on third-party site')) :>
+<li><: l('%s for %s','-1',lp('setting','Prompt me')) :>
+</ul>
+</td>
+</tr>
+
+
+<tr><td colspan="2" class="ctd3"><b><: l('Color Settings') :></b></td></tr>
+
+<tr>
+<td class="ctd" style="padding-right:15px;" align="right" valign="top">
+<: l('Header:') :>
+</td>
+<td class="ctd">
+kj =
+<ul>
+<li><: l('%s for %s','r3',l('Muted red')) :> (<: lp('setting','default') :>)
+<li><: l('%s for %s','d',l('Light green')) :>
+<li><: l('%s for %s','g',l('Intense green')) :>
+<li><: l('%s for %s','g2',l('Green')) :>
+<li><: l('%s for %s','b',l('Light blue')) :>
+<li><: l('%s for %s','b2',l('Blue')) :>
+<li><: l('%s for %s','r',l('Intense red')) :>
+<li><: l('%s for %s','r2',l('Red')) :>
+<li><: l('%s for %s','p',l('Purple')) :>
+<li><: l('%s for %s','o',l('Orange')) :>
+<li><: l('%s for %s','w',l('White')) :>
+<li><: l('or write out the color code you want, e.g. %s (%s is an encoded %s char).','%23395323','%23','#') :>
+</ul>
+</td>
+</tr>
+
+<tr>
+<td class="ctd" style="padding-right:15px;" align="right" valign="top">
+<: l('Highlight:') :>
+</td>
+<td class="ctd">
+ky =
+<ul>
+<li><: l('%s for %s','e',l('Grey')) :> (<: lp('setting','default') :>)
+<li><: l('%s for %s','-1',lp('setting','Off')) :>
+<li><: l('%s for %s','g',l('Green')) :>
+<li><: l('%s for %s','b',l('Blue')) :>
+<li><: l('%s for %s','t',l('Tan')) :>
+<li><: l('%s for %s','y',l('Yellow')) :>
+<li><: l('%s for %s','p',l('Pink')) :>
+<li><: l('or write out the color code you want, e.g. %s (%s is an encoded %s char).','%23395323','%23','#') :>
+</ul>
+</td>
+</tr>
+
+<tr>
+<td class="ctd" style="padding-right:15px;" align="right" valign="top">
+<: l('URLs:') :>
+</td>
+<td class="ctd">
+kx =
+<ul>
+<li><: l('%s for %s','r',l('Red')) :> (<: lp('setting','default') :>)
+<li><: l('%s for %s','g',l('Green')) :>
+<li><: l('%s for %s','l',l('Black')) :>
+<li><: l('%s for %s','b',l('Blue')) :>
+<li><: l('%s for %s','p',l('Purple')) :>
+<li><: l('%s for %s','o',l('Orange')) :>
+<li><: l('%s for %s','e',l('Grey')) :>
+<li><: l('or write out the color code you want, e.g. %s (%s is an encoded %s char).','%23395323','%23','#') :>
+</ul>
+</td>
+</tr>
+
+<tr>
+<td class="ctd" style="padding-right:15px;" align="right" valign="top">
+<: l('Background:') :>
+</td>
+<td class="ctd">
+k7 =
+<ul>
+<li><: l('%s for %s','w',l('White')) :> (<: lp('setting','default') :>)
+<li><: l('%s for %s','d',l('Light green')) :>
+<li><: l('%s for %s','g',l('Intense green')) :>
+<li><: l('%s for %s','g2',l('Green')) :>
+<li><: l('%s for %s','b',l('Light blue')) :>
+<li><: l('%s for %s','b2',l('Blue')) :>
+<li><: l('%s for %s','r',l('Intense red')) :>
+<li><: l('%s for %s','r2',l('Red')) :>
+<li><: l('%s for %s','p',l('Purple')) :>
+<li><: l('%s for %s','o',l('Orange')) :>
+<li><: l('or write out the color code you want, e.g. %s (%s is an encoded %s char).','%23395323','%23','#') :>
+</ul>
+</td>
+</tr>
+
+<tr>
+<td class="ctd" style="padding-right:15px;" align="right" valign="top">
+<: l('Text:') :>
+</td>
+<td class="ctd">
+k8 =
+<ul>
+<li><: l('%s for %s','g',l('Grey')) :> (<: lp('setting','default') :>)
+<li><: l('or write out the color code you want, e.g. %s (%s is an encoded %s char).','%23395323','%23','#') :>
+</ul>
+</td>
+</tr>
+
+<tr>
+<td class="ctd" style="padding-right:15px;" align="right" valign="top">
+<: l('Links:') :>
+</td>
+<td class="ctd">
+k9 =
+<ul>
+<li><: l('%s for %s','g',l('Dark Grey')) :> (<: lp('setting','default') :>)
+<li><: l('%s for %s','b',l('Blue')) :> 
+<li><: l('or write out the color code you want, e.g. %s (%s is an encoded %s char).','%23395323','%23','#') :>
+</ul>
+</td>
+</tr>
+
+<tr>
+<td class="ctd" style="padding-right:15px;" align="right" valign="top">
+<: l('Visited links:') :>
+</td>
+<td class="ctd">
+kaa =
+<ul>
+<li><: l('%s for %s','p',lp('setting','Grey with checkmark')) :> (<: lp('setting','default') :>)
+<li><: l('%s for %s','p',l('Purple')) :> 
+<li><: l('or write out the color code you want, e.g. %s (%s is an encoded %s char).','%23395323','%23','#') :>
+</ul>
+</td>
+</tr>
+
+<tr><td colspan="2" class="ctd3"><b><: l('Look & Feel Settings') :></b></td></tr>
+
+<tr>
+<td class="ctd" style="padding-right:15px;" align="right" valign="top">
+<: l('Theme:') :>
+</td>
+<td class="ctd">
+kae =
+<ul>
+<li><: l('%s for %s','-1',lp('theme','Default')) :> (<: lp('setting','default') :>)
+<li><: l('%s for %s','c',lp('theme','Contrast')) :>
+<li><: l('%s for %s','r',lp('theme','Retro')) :>
+<li><: l('%s for %s','d',lp('theme','Dark')) :>
+<li><: l('%s for %s','t',lp('theme','Terminal')) :>
+<li><: l('or write out the color code you want, e.g. %s (%s is an encoded %s char).','%23395323','%23','#') :>
+</ul>
+</td>
+</tr>
+
+
+<tr>
+<td class="ctd" style="padding-right:15px;" align="right" valign="top">
+<: l('Size:') :>
+</td>
+<td class="ctd">
+ks =
+<ul>
+<li><: l('%s for %s','n',lp('size','Large')) :> (<: lp('setting','default') :>)
+<li><: l('%s for %s','l',lp('size','Larger')) :>
+<li><: l('%s for %s','t',lp('size','Largest')) :>
+<li><: l('%s for %s','m',lp('size','Medium')) :>
+<li><: l('%s for %s','s',lp('size','Small')) :>
+</ul>
+</td>
+</tr>
+
+<tr>
+<td class="ctd" style="padding-right:15px;" align="right" valign="top">
+<: l('Width:') :>
+</td>
+<td class="ctd">
+kw =
+<ul>
+<li><: l('%s for %s','n',lp('width','Normal')) :> (<: lp('setting','default') :>)
+<li><: l('%s for %s','w',lp('width','Wide')) :>
+<li><: l('%s for %s','s',lp('width','Super wide')) :>
+</ul>
+</td>
+</tr>
+
+<tr>
+<td class="ctd" style="padding-right:15px;" align="right" valign="top">
+<: l('Placement:') :>
+</td>
+<td class="ctd">
+km = 
+<ul>
+<li><: l('%s for %s','m',lp('placement','Middle')) :> (<: lp('setting','default') :>)
+<li><: l('%s for %s','l',lp('placement','Left')) :>
+</ul>
+</td>
+</tr>
+
+<tr>
+<td class="ctd" style="padding-right:15px;" align="right" valign="top">
+<: l('Link font:') :>
+</td>
+<td class="ctd">
+ka =
+<ul>
+<li><: l('%s for %s','a','Arial') :>
+<li><: l('%s for %s','c','Century Gothic') :>
+<li><: l('%s for %s','g','Georgia') :>
+<li><: l('%s for %s','h','Helvetica') :>
+<li><: l('%s for %s','p','Proxima Nova') :> (<: lp('setting','default') :>)
+<li><: l('%s for %s','n','Sans-serif') :>
+<li><: l('%s for %s','e','Segoe UI') :>
+<li><: l('%s for %s','s','Serif') :>
+<li><: l('%s for %s','o','Tahoma') :>
+<li><: l('%s for %s','t','Times') :>
+<li><: l('%s for %s','b','Trebuchet MS') :>
+<li><: l('%s for %s','v','Verdana') :>
+<li><: l('or write out the font you want') :>
+</td>
+</td>
+</tr>
+
+<tr>
+<td class="ctd" style="padding-right:15px;" align="right" valign="top">
+<: l('Underline:') :>
+</td>
+<td class="ctd">
+ku =
+<ul>
+<li><: l('%s for %s','1',lp('setting','On')) :>
+<li><: l('%s for %s','-1',lp('setting','Off')) :> (<: lp('setting','default') :>)
+</td>
+</tr>
+
+<tr>
+<td class="ctd" style="padding-right:15px;" align="right" valign="top">
+<: l('Text font:') :>
+</td>
+<td class="ctd">
+kt =
+<ul>
+<li><: l('%s for %s','a','Arial') :>
+<li><: l('%s for %s','c','Century Gothic') :>
+<li><: l('%s for %s','g','Georgia') :>
+<li><: l('%s for %s','h','Helvetica') :>
+<li><: l('%s for %s','p','Proxima Nova') :> (<: lp('setting','default') :>)
+<li><: l('%s for %s','n','Sans-serif') :>
+<li><: l('%s for %s','e','Segoe UI') :>
+<li><: l('%s for %s','s','Serif') :>
+<li><: l('%s for %s','o','Tahoma') :>
+<li><: l('%s for %s','t','Times') :>
+<li><: l('%s for %s','b','Trebuchet MS') :>
+<li><: l('%s for %s','v','Verdana') :>
+<li><: l('or write out the font you want') :>
+</td>
+</tr>
+
+<tr><td colspan="2" class="ctd3"><b><: l('Interface Settings') :></b></td></tr>
+
+<tr>
+<td class="ctd" style="padding-right:15px;" align="right" valign="top">
+<: l('Header:') :>
+</td>
+<td class="ctd">
+ko =
+<ul>
+<li><: l('%s for %s','1',lp('setting','On & floating')) :>
+<li><: l('%s for %s','s',lp('setting','On & scrolling')) :> (<: lp('setting','default') :>)
+<li><: l('%s for %s','-1',lp('setting','Off except for Instant Answer Menu')) :> (Please do not remove our header for anything other than individual use. See paragraph at the top for more details.)
+<li><: l('%s for %s','-2',lp('setting','Off')) :> (Please do not remove our header for anything other than individual use. See paragraph at the top for more details.)
+</ul>
+</td>
+</tr>
+
+<tr>
+<td class="ctd" style="padding-right:15px;" align="right" valign="top">
+<: l('Advertisements:') :>
+</td>
+<td class="ctd">
+k1 =
+<ul>
+<li><: l('%s for %s','1',lp('setting','On')) :> (<: lp('setting','default') :>)
+<li><: l('%s for %s','-1',lp('setting','Off')) :>
+</td>
+</tr>
+
+<td class="ctd" style="padding-right:15px;" align="right" valign="top">
+<: l('Page #s:') :>
+</td>
+<td class="ctd">
+kv =
+<ul>
+<li><: l('%s for %s','1',lp('setting','On')) :>
+<li><: l('%s for %s','n',lp('setting',"On but no numbers")) :>
+<li><: l('%s for %s','-1',lp('setting','Off')) :> (<: lp('setting','default') :>)
+</td>
+</tr>
+
+<td class="ctd" style="padding-right:15px;" align="right" valign="top">
+<: l('Source:') :>
+</td>
+<td class="ctd">
+t =
+<ul>
+<li><: l('A string to identify the source.') :>
+<li><: lp('moreinfo','See %s for more info.',r('<a href="https://duck.co/help/privacy/t">') ~ lp('moreinfo','this help page') ~ r('</a>')) :>
+</td>
+</tr>
+
+</table>

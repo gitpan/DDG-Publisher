@@ -1,0 +1,26 @@
+<div id="header_wrapper" class="header-wrap<: if $alt_header { :> header-wrap--with-alt<: } :> js-header-wrap">
+	<div id="header" class="header  cw">
+		<div class="header__search-wrap">
+			<a href="/" class="header__logo-wrap">
+				<span class="header__logo">DuckDuckGo</span>
+			</a>
+			<div class="header__content  header__search  search-wrap--header">
+				<form id="search_form" class="search  search--header  js-search-form" name="x" action="/">
+					<input type="text" name="q" tabindex="1" autocomplete="off" id="search_form_input" class="search__input  js-search-input" placeholder="<: l('Search DuckDuckGo'):>" />
+					<input id="search_button" class="search__button  js-search-button" type="submit" tabindex="2" value="S" />
+					<input id="search_form_input_clear" class="search__clear  empty  js-search-clear" type="button" tabindex="3" value="X" />
+					<div id="search_elements_hidden" class="search__hidden  js-search-hidden"></div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<: if $alt_header { :>
+<div class="header-wrap--alt  js-header-wrap">
+	<div class="header--alt  cw  js-show-header">
+		<i class="header--alt__loupe"></i>
+		<: if $alt_header_text { :><span class="header--alt__text"><: l('Try a search!') :></span><: } :>
+	</div>
+</div>
+<: } :>
+<div class="nav-menu--slideout  js-side-menu"></div>

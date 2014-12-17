@@ -1,0 +1,251 @@
+<div class="abt  abt--timeline  blk  blk--hero">
+	<div class="timeline-slider  js-timeline-slider">
+		<div class="timeline-box-nav  js-timeline-box-nav">
+			<span class="timeline--nav  nav  nav--hero  nav--prev  js-timeline-prev"></span>
+			<span class="timeline--nav  nav  nav--hero  nav--next  js-timeline-next"></span>
+		</div>
+		<div class="timeline  js-timeline-box">
+			<div class="timeline__panel  is-active  js-timeline-item" data-date="START">
+				<div class="timeline__cw">
+					<noscript>
+						<img class="timeline__logo js-lazysvg no-js__hide" src="/assets/dax-alt.png" />
+					</noscript>
+					<img class="timeline__logo js-lazysvg no-js__hide" src="" data-src="/assets/dax-alt" />
+					<h1 class="timeline__title">Our vision is simple.</h1>
+					<p class="timeline__snippet">To give you great search results without tracking you.</p>
+				</div>
+			</div><:- for $ddg_events -> $event { -:><div class="timeline__panel  js-timeline-item" data-date="<: $event.date :>">
+				<div class="timeline__cw">
+					<img class="timeline__icon  js-lazysvg" src="" data-src="/assets/about/icons/<: if $event.icon { $event.icon } else { $event.type } :>" />
+					<h2 class="timeline__title"><: $event.title :></h2>
+					<p class="timeline__snippet"><: $event.snippet :></p>
+					<p class="timeline__date"><: $event.date :></p>
+				</div>
+			</div><:- } -:>
+		</div>
+		<div class="timeline-nav">
+			<div class="timeline-nav__cw  js-timeline-nav">
+				<span class="timeline-nav__it  timeline-nav__it--start  is-active  js-timeline-nav-item  js-timeline-start"></span>
+				<:- for $ddg_events -> $event { -:>
+					<: if $event.year {:><span class="timeline-nav__it  timeline-nav__it--year"><: $event.year :></span><: } :>
+					<span class="timeline-nav__it js-timeline-nav-item"></span>
+				<:- } -:>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="abt  blk  blk--alt  blk--arr">
+	<div class="cw--c">
+		<h2 class="abt__title">About us</h2>
+		<p class="abt__sub">
+DuckDuckGo is a search engine driven by community &ndash; you&rsquo;re on the team! 
+<br class="hide--screen-s">We&rsquo;re not just servers and an algorithm. We&rsquo;re so much more.
+		</p>
+		<div class="abt__row">
+			<div class="abt__key  third  half--screen-m">
+				<noscript>
+					<img class="abt__key__icon" src="/assets/about/icons/privacy-alt.png" />
+				</noscript>
+				<img class="abt__key__icon  js-lazysvg  no-js__hide" src="" data-src="/assets/about/icons/privacy-alt">
+				<h3 class="abt__key__title">Real Privacy</h3>
+				<h6 class="abt__key__sub">We don&rsquo;t track you.</h6>
+				<p>What you search for is your own business and we&rsquo;d like to keep it that way. That&rsquo;s why we don&rsquo;t collect any personal information and therefore, have none to share.</p>
+				<a class="abt__key__link" href="/privacy">Our Policy</a>
+			</div><div class="abt__key  third  half--screen-m">
+				<noscript>
+					<img class="abt__key__icon" src="/assets/about/icons/search-alt.png" />
+				</noscript>
+				<img class="abt__key__icon  js-lazysvg  no-js__hide" src="" data-src="/assets/about/icons/search-alt">
+				<h3 class="abt__key__title">Smarter Search</h3>
+				<h6 class="abt__key__sub">Get answers quicker.</h6>
+				<p>We help you get where you want to go in fewer clicks. We do that through instant answers, keyboard shortcuts and !bangs. You can even help improve your search engine!</p>
+				<a class="abt__key__link" href="http://duckduckhack.com">Get Involved</a>
+			</div><div class="abt__key  third  half--screen-m">
+				<noscript>
+					<img class="abt__key__icon" src="/assets/about/icons/design-alt.png" />
+				</noscript>
+				<img class="abt__key__icon  js-lazysvg  no-js__hide" src="" data-src="/assets/about/icons/design-alt">
+				<h3 class="abt__key__title">Less Clutter</h3>
+				<h6 class="abt__key__sub">Fewer ads and reduced spam.</h6>
+				<p>With search our only focus, we are dedicated to delivering you a clutter-free interface that you can fully customize to your liking or apply one of our preset themes.</p>
+				<a class="abt__key__link" href="/settings">Tweak Settings</a>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="abt  blk  blk--arr">
+	<div class="cw--c">
+		<h2 class="abt__title">Our Team</h2>
+		<p class="abt__sub">
+			Meet the DuckDuckGo core team and check out our full team <a href="https://twitter.com/duckduckgo/lists/team/members">on twitter</a>.
+			<br/>
+			Interested in working with us?  Check out our <a href="https://duck.co/help/company/hiring">hiring philosophy</a>.
+		</p>
+		
+		<ul class="team"><:- for $team_members -> $team { -:><li class="team__m  js-team-toggle  twenty  quarter--screen-m  thirty--screen-s  fifty--screen-xs">
+				<: if $team.link {:><a href="<: $team.link :>"><:}:>
+				<span class="team__img-wrap">
+					<noscript>
+						<img class="team__img" src="/assets/about/team/<: $team.image :>.jpg" />
+					</noscript>
+					<img class="team__img  js-lazyload  no-js__hide  circle" src="" data-src="/assets/about/team/<: $team.image :>.jpg" />
+				</span>
+				<: if $team.link {:></a><:}:>
+				<div class="team__details">
+					<span class="team__name"><: $team.name :></span>
+					<span class="team__title"><: $team.title :></span>
+					<span class="team__info"><: $team.info :></span>
+				</div>
+			</li><:- } -:>
+		</ul>
+	</div>
+</div>
+<div class="abt  blk  blk--hero  blk--arr">
+	<div class="cw--c">
+		<h2 class="abt__title">Our Community</h2>
+		<p class="abt__sub">Our community is our extended team.
+<br>Join the community and help improve DuckDuckGo.</p>
+		<div class="abt__row">
+			<div class="abt__key  third  half--screen-m">
+				<a href="https://duck.co">
+					<noscript>
+						<img class="abt__key__icon" src="/assets/about/icons/build.png" />
+					</noscript>
+					<img class="abt__key__icon  js-lazysvg  no-js__hide" src="" data-src="/assets/about/icons/build">
+					<h3 class="abt__key__title">Duck.co</h3>
+				</a>
+				<p>Duck.co is the hub of the DuckDuckGo community, where you can create instant answers, submit and discuss ideas, or help translate pages into other languages.</p>
+				<a class="abt__key__link" href="https://duck.co">Improve DuckDuckGo</a>
+			</div><div class="abt__key  third  half--screen-m">
+				<a href="https://duck.co/forum">
+					<noscript>
+						<img class="abt__key__icon" src="/assets/about/icons/community.png" />
+					</noscript>
+					<img class="abt__key__icon  js-lazysvg  no-js__hide" src="" data-src="/assets/about/icons/community">
+					<h3 class="abt__key__title">Discuss</h3>
+				</a>
+				<p>Have feedback to share? Our forums are a place to chat about all things DuckDuckGo. Ask questions, share ideas, and engage other community members.</p>
+				<a class="abt__key__link" href="https://duck.co">Discuss DuckDuckGo</a>
+			</div><div class="abt__key  third  half--screen-m">
+				<a href="/spread">
+					<noscript>
+						<img class="abt__key__icon" src="/assets/about/icons/love.png" />
+					</noscript>
+					<img class="abt__key__icon  js-lazysvg  no-js__hide" src="" data-src="/assets/about/icons/love">
+					<h3 class="abt__key__title">Spread</h3>
+				</a>
+				<p>Everyone could use real privacy. Want to join us and other community members in spreading DuckDuckGo to new users? Get your friends and family to &ldquo;duck it&rdquo;.</p>
+				<a class="abt__key__link" href="/spread">Spread DuckDuckGo</a>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="abt  blk  blk--alt  blk--arr">
+	<h2 class="abt__title">In the News</h2>
+		<div class="news-slider js-news-slider">
+			<div class="news-slider__wrap  js-news-slider-wrap">
+			<: for $news_articles -> $news { :>
+			<div class="news-slider__it  js-news-item" data-source="<: $news.source :>">
+				<div class="tile  news-tile">
+					<div class="news-tile__meta">
+						<div class="news-tile__meta__img-wrap">
+							<noscript><img src="assets/about/news/<: $news.source :>_author.jpg" alt="" class="news-tile__meta__img" /></noscript>
+							<img src="" data-src="assets/about/news/<: $news.source :>_author.jpg" alt="" class="news-tile__meta__img  js-lazyload  no-js__hide" />
+						</div>
+						<div class="news-tile__meta__body">
+							<span class="news-tile__author">by <: $news.author_name :></span>
+							<span class="news-tile__source"><: $news.source_full :></span>
+							<span class="news-tile__date"><: $news.date :></span>
+						</div>
+					</div>
+					<h2 class="news-tile__title"><: $news.headline :></h2>
+					<p class="news-tile__snippet"><: $news.snippet :></p>
+					<a href="<: $news.source_link :>" class="news-tile__link"><: lp('newslink', 'Full Story') :></a>
+				</div>
+			</div>
+			<: } :>
+			</div>
+			<ul class="news-slider__list">
+				<: for $news_articles -> $news { :>
+				<li class="news-slider__list__it  js-news-nav" data-source="<: $news.source :>">
+					<noscript><img src="assets/about/news/<: $news.source :>_logo.png" class="news-slider__list__img" alt="<: $news.source_full :>" /></noscript>
+					<img src="" data-src="assets/about/news/<: $news.source :>_logo.png" class="news-slider__list__img  js-lazyload  no-js__hide" alt="<: $news.source_full :>" />
+				</li>
+				<: } :>
+			</ul>
+		</div>
+</div>
+<div class="abt  blk  blk--arr">
+	<div class="cw--c">
+		<h2 class="abt__title">Our Newsletter</h2>
+		<p class="abt__sub">Stay up to date with all things DuckDuckGo.</p>
+		<form class="frm--newsletter  abt__newsletter" action="https://flash.duckduckgo.com/e.js" method="post" name="y">
+			<input type="hidden" name="add" value="1" />
+			<input type="text" placeholder="Your email address" class="frm__input" name="from" />
+			<input type="submit" value="Subscribe" class="frm__btn  btn  btn--primary--alt" />
+			<div class="frm--newsletter__chks">
+				<label class="frm__label" for="add">
+					<input class="frm__label__chk" type="checkbox" id="add" name="add" checked="checked">
+					<span class="frm__label__txt">
+						Newsletter 
+						<span class="frm--newsletter__frq">Monthly</span>
+					</span>
+				</label>
+				<label class="frm__label" for="add2">
+					<input class="frm__label__chk" type="checkbox" id="add2" name="add2"> 
+					<span class="frm__label__txt">
+						Beta
+						<span class="frm--newsletter__frq">New stuff</span>
+					</span>
+				</label>
+				<label class="frm__label" for="add3">
+					<input class="frm__label__chk" type="checkbox" id="add3" name="add3"> 
+					<span class="frm__label__txt">
+						Spread
+						<span class="frm--newsletter__frq">Promotions</span>
+					</span>
+				</label>
+				<label class="frm__label" for="add4">
+					<input class="frm__label__chk" type="checkbox" id="add4" name="add4"> 
+					<span class="frm__label__txt">
+						Privacy
+						<span class="frm--newsletter__frq">Education</span>
+					</span>
+				</label>
+			</div>
+		</form>
+	</div>
+</div>
+<div class="abt  abt--foot  blk  blk--foot  blk--arr">
+	<div class="cw--c">
+		<div class="abt--foot__nav-col  third  thirty--screen-s">
+			<h5 class="abt--foot__nav-head">Community</h5>
+			<ul>
+				<li><a href="https://duck.co/">Duck.co</a></li>
+				<li><a href="http://duckduckhack.com/">DuckDuckHack</a></li>
+				<li><a href="https://duck.co/translate">Translate</a></li>
+				<li><a href="https://duck.co/forum">Discuss</a></li>
+				<li><a href="https://duckduckgo.com/spread">Spread</a></li>
+			</ul>
+		</div>
+		<div class="abt--foot__nav-col  third  thirty--screen-s">
+			<h5 class="abt--foot__nav-head">Follow</h5>
+			<ul>
+				<li><a href="https://duck.co/blog">Blog</a></li>
+				<li><a href="https://twitter.com/duckduckgo">Twitter</a><li>
+				<li><a href="https://twitter.com/duckduckgo/team/members">Contributors</a></li>
+				<li><a href="http://www.reddit.com/r/duckduckgo">Reddit</a></li>
+				<li><a href="https://github.com/duckduckgo">GitHub</a></li>
+			</ul>
+		</div>
+		<div class="abt--foot__nav-col  third  thirty--screen-s">
+			<h5 class="abt--foot__nav-head">More</h5>
+			<ul>
+				<li><a href="https://duck.co/help/">Help</a></li>
+				<li><a href="/privacy">Privacy</a></li>
+				<li><a href="https://duck.co/help/company/press">Press</a></li>
+				<li><a href="https://duck.co/help/company/hiring">Jobs</a></li>
+				<li><a href="/traffic">Traffic</a></li>
+		</div>
+	</div>
+</div>

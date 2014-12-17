@@ -1,0 +1,8 @@
+		<div class="logo-wrap--home">
+			<a id="logo_homepage_link" class="logo_homepage" title="About DuckDuckGo" href="/about">About DuckDuckGo</a>
+		</div>
+<!--
+		<div class="logo-wrap--home">
+			<a id="logo_homepage_link" class="logo_homepage  logo_homepage--resetthenet" title="Reset the Net" href="https://www.resetthenet.org/" target="_new">Reset the Net</a>
+		</div>
+		//-->
